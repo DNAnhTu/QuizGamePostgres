@@ -71,3 +71,5 @@ CREATE TABLE users_history (
   difficulty varchar(50) NOT NULL,
   score INT NOT NULL
 );
+
+ALTER TABLE users_history ADD PRIMARY KEY (id);

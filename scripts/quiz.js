@@ -129,7 +129,7 @@ function checkScore1(){
 
 
 	//---------------------------------True_false---------------------------------------
-	if(document.getElementById("Questions2Q1Ans1_b").checked){
+	/*if(document.getElementById("Questions2Q1Ans1_b").checked){
 		if(document.getElementById("Questions2Q1Ans1_b").value == document.getElementById("answear_bQ1").value){
 			score++;
 		}
@@ -138,7 +138,7 @@ function checkScore1(){
 		if(document.getElementById("Questions2Q1Ans2_b").value == document.getElementById("answear_bQ1").value){
 			score++;
 		}
-	}
+	}*/
 
 	//------------------------------Multiple_choices--------------------------------------
 	if(document.getElementById("check1_aQ1").checked){
@@ -196,7 +196,7 @@ function checkScore1(){
 	document.getElementById("scoreText").value=score;
 	document.getElementById("difficultyText").value="easy";
 	document.getElementById("dateText").value=today;
-	document.getElementById("score").innerHTML=score+"/5";
+	document.getElementById("score").innerHTML=score+"/4";
 }
 
 /*================================================================================Medium==============================================================================*/
@@ -252,7 +252,7 @@ function checkScore2(){
 
 
 	//---------------------------------True_false---------------------------------------
-	if(document.getElementById("Questions2Q2Ans1_b").checked){
+	/*if(document.getElementById("Questions2Q2Ans1_b").checked){
 		if(document.getElementById("Questions2Q2Ans1_b").value == document.getElementById("answear_bQ2").value){
 			score++;
 		}
@@ -261,7 +261,7 @@ function checkScore2(){
 		if(document.getElementById("Questions2Q2Ans2_b").value == document.getElementById("answear_bQ2").value){
 			score++;
 		}
-	}
+	}*/
 
 	//------------------------------Multiple_choices--------------------------------------
 	if(document.getElementById("check1_aQ2").checked){
@@ -319,7 +319,7 @@ function checkScore2(){
 	document.getElementById("scoreText").value=score;
 	document.getElementById("difficultyText").value="medium";
 	document.getElementById("dateText").value=today;
-	document.getElementById("score").innerHTML=score+"/5";
+	document.getElementById("score").innerHTML=score+"/4";
 }
 
 
@@ -376,7 +376,7 @@ function checkScore3(){
 
 
 	//---------------------------------True_false---------------------------------------
-	if(document.getElementById("Questions2Q3Ans1_b").checked){
+	/*if(document.getElementById("Questions2Q3Ans1_b").checked){
 		if(document.getElementById("Questions2Q3Ans1_b").value == document.getElementById("answear_bQ3").value){
 			score++;
 		}
@@ -385,7 +385,7 @@ function checkScore3(){
 		if(document.getElementById("Questions2Q3Ans2_b").value == document.getElementById("answear_bQ3").value){
 			score++;
 		}
-	}
+	}*/
 
 	//------------------------------Multiple_choices--------------------------------------
 	if(document.getElementById("check1_aQ3").checked){
@@ -443,7 +443,7 @@ function checkScore3(){
 	document.getElementById("scoreText").value=score;
 	document.getElementById("difficultyText").value="hard";
 	document.getElementById("dateText").value=today;
-	document.getElementById("score").innerHTML=score+"/5";
+	document.getElementById("score").innerHTML=score+"/4";
 }
 
 //=======================================================Score-Popup================================================

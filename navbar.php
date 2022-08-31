@@ -3,18 +3,18 @@
         session_start();
 ?>
         <div class= "mobButton">
-                <a class="logo" href="index.html" >SuperApp</a> 
+                <a class="logo" href="index.html" >QuizApp</a> 
                 <b id="menuButton"onclick="mobileMenu()">&#9776;</b>
         </div>
         <div id= "mobileMenu" style="display: none;">
-                <a href="index.html">Αρχική</a>
-                <a href="basics.html">Title</a>
-                <a href="more.html">More</a>
+                <a href="index.html"></a>
+                <a href="basics.html"></a>
+                <a href="more.html"></a>
                 <a href="quiz.php">Quiz</a>
                 <?php if(isset($_SESSION["role"])) {
                         if($_SESSION["role"]=="admin"){ ?>
                                 <a href="./php/administrator.php">Administrator</a>
-                                <a href="./php/moderator.php">Moderator</a>
+                                <a href="./php/moderator.php"></a>
                                 <a href="./php/user.php">User</a>
                         <?php }
                         else if($_SESSION["role"]=="moderator"){ ?>
@@ -69,9 +69,9 @@
                         <?php   }
                         }
                 ?>
-                <a class="logo" href="index.html" >SuperApp</a> 
-                <a href="basics.html">Title</a>     
-                <a href="more.html">More</a>
+                <a class="logo" href="index.html">QuizApp</a> 
+                <!--<a href="basics.html"></a>     
+                <a href="more.html"></a>-->
                 <a href="quiz.php">Quiz</a>
                                 
                 

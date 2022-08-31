@@ -43,11 +43,12 @@
                 </div>
 			
 
-				<div class="factsBox">
+				<!--<div class="factsBox">
 					<!--<h class="FactTitleText">Το ήξερες ότι</h> <br><br>
 					<p class="FactText">Με καταγωγή από τη Νότια Αμερική η πατάτα, εισήχθη στην Ευρώπη την εποχή των Ανακαλύψεων, κάπου τον 16ο αιώνα, ενώ στον ελλαδικό χώρο έγινε γνωστή αμέσως μετά την Επανάσταση, χάρη στον Ιωάννη Καποδίστρια.
-					-->
+					
 				</div>
+				-->
 			
 			</div>
 			
@@ -103,10 +104,10 @@
 									<br>
 									<div class="container">        
 										<input type="radio" name="Questions2Q1_2" id="Questions2Q1Ans1_b" value="1">
-										<label class="radioButtonBefore" for="Questions2Q1Ans1_b">True</label>
+										<label class="radioButtonBefore" for="Questions2Q1Ans1_b">Σωστό</label>
 							
 										<input type="radio" name="Questions2Q1_2" id="Questions2Q1Ans2_b" value="0">
-										<label class="radioButtonBefore" for="Questions2Q1Ans2_b">False</label>
+										<label class="radioButtonBefore" for="Questions2Q1Ans2_b">Λάθος</label>
 
 										<input class="hidden" type="text" id="answear_bQ1" value=<?php echo $row2["answear"];?>>
 									
@@ -135,14 +136,15 @@
 									
 							<!-----------------------------------------Quiz 4-------------------------------------------------------->
 							<div  id="quiz4" class="quiz">
+									
 									<div id="color001">
-										<p><?php echo $row4["question"];?> 
-											<input type="text" class="check003" id="inputQ1" size="20"/>
-										</p>
+										<p><?php echo $row4["question"];?> <input type="text" class="check003" id="inputQ1" size="20"/></p>
 										<input class="hidden" type="text" id="answearQ1" value=<?php echo $row4["answear"];?>>
 									</div>
 									<br><br>
 							</div>
+
+
 							<button  class="btn btn-white-reload btn-animation-1-reload submitButton" onclick="checkScore1()">Submit</button></br>	
 
 				</div><!-- Easy-->
@@ -366,11 +368,12 @@
 					</div>
 				</div>
 				
+				
 			</div><!--col10-->
 		</div><!--row-->
 		<!--=====================================Footer=============================================--->
 		<footer >
-			<p>DNAT</p> 
+			<p>Copyright &copy; 2022. All rights reserved. </p>
 		</footer>
 		<script type="text/javascript">
 			onlyOneCheckBox1()

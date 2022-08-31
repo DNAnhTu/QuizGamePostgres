@@ -46,8 +46,8 @@
             <table class="styled-table" >
                     <tr style="background: #2B7A78;">
                         <th >Username</th>
-                        <th >Ημερομηνία</th>
-                        <th >Δυσκολία</th>
+                        <th >Date Play</th>
+                        <th >Difficulty</th>
                         <th >Score</th>
                     </tr>    
                 <?php
@@ -58,7 +58,7 @@
                     <td><?php echo $row["username"]; ?></td>
                     <td><?php echo $row["date"]; ?></td>
                     <td><?php echo $row["difficulty"]; ?></td>
-                    <td><?php echo $row["score"]."/5"; ?></td>
+                    <td><?php echo $row["score"]."/4"; ?></td>
                 </tr>
                 <?php
                     $i++;
