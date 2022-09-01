@@ -6,12 +6,12 @@ include("connection.php");
     if (pg_num_rows($result1) === 1) {
         $row1 = pg_fetch_assoc($result1);
     } else {
-        echo "Error fetching questions.";
+       echo "Error fetching questions.";
     }
 
-    $query1 = "select * from  true_false where difficulty='easy' AND onhold=0 ORDER BY random() limit 2;";
+    $query1 = "select * from  true_false where difficulty='easy' AND onhold=0 ORDER BY random() limit 1;";
     $result2 = pg_query($con,$query1);
-    if (pg_num_rows($result2) != 2) {
+    if (pg_num_rows($result2) != 1) {
         echo "Error fetching questions." ;
     }
 
@@ -43,9 +43,9 @@ include("connection.php");
     }
 
 
-    $query2 = "select * from  true_false where difficulty='medium' AND onhold=0 ORDER BY random() limit 2;";
+    $query2 = "select * from  true_false where difficulty='medium' AND onhold=0 ORDER BY random() limit 1;";
     $result6 = pg_query($con,$query2);
-    if (pg_num_rows($result6) != 2) {
+    if (pg_num_rows($result6) != 1) {
         echo "Error fetching questions." ;
     }
 
@@ -77,9 +77,9 @@ include("connection.php");
         echo "Error fetching questions."  ;
     }
 
-    $query3 = "select * from  true_false where difficulty='hard' AND onhold=0 ORDER BY random() limit 2;";
+    $query3 = "select * from  true_false where difficulty='hard' AND onhold=0 ORDER BY random() limit 1;";
     $result10 = pg_query($con,$query3);
-    if (pg_num_rows($result10) != 2) {
+    if (pg_num_rows($result10) != 1) {
         echo "Error fetching questions." ;
     } 
 

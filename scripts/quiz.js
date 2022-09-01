@@ -440,6 +440,8 @@ function checkScore3(){
 	if(document.getElementById("inputQ3").value.toUpperCase() == document.getElementById("answearQ3").value.toUpperCase()){
 		score++;
 	}
+
+
 	document.getElementById("scoreText").value=score;
 	document.getElementById("difficultyText").value="hard";
 	document.getElementById("dateText").value=today;

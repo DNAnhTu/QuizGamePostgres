@@ -82,9 +82,12 @@
 }
 article:first-child {
     margin: 100px 20px 20px 20px;
+    margin-left: 20%;
 }
 article {
     margin: 20px;
+    width: 50%;
+    
 }
 
 /*====================================Button========================================*/

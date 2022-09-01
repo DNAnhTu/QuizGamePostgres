@@ -72,9 +72,9 @@
                         <td data-label="Correct answear 4"><?php echo $row["correct_ans4"]; ?></td>
                         <td data-label="Difficulty1"><?php echo $row["difficulty"]; ?></td>
                         <td data-label="On hold"><?php echo $row["onhold"]; ?></td>
-                        <td class="AcceptButton"><a href="accept-question.php?type=1&id=<?php echo $row["id"];?>">Accept</a></td>
-                        <td class="EditButton"><a href="#" onclick="togglePopup1();">Edit</a></td>
-                        <td class="DeleteButton"><a href="delete-question.php?type=1&id=<?php echo $row["id"];?>">Delete</a></td>
+                        <td class="AcceptButton"><a style="text-decoration: none; color:#fff" href="accept-question.php?type=1&id=<?php echo $row["id"];?>">Accept</a></td>
+                        <td class="EditButton"><a style="text-decoration: none; color:#fff" href="#" onclick="togglePopup1();">Edit</a></td>
+                        <td class="DeleteButton"><a style="text-decoration: none; color:#fff" href="delete-question.php?type=1&id=<?php echo $row["id"];?>">Delete</a></td>
                     </tr>
                     <?php
                         $i++;
@@ -132,7 +132,7 @@
 
                                 <button class="btn btn-white-reload btn-animation-1-reload" onclick="togglePopup1()" type="submit" value="Edit">Edit</button>
                                 
-                                <a onclick="togglePopup1()" href="#">Close</a>
+                                <a class="btn btn-white-reload btn-animation-1-reload" style="text-decoration: none; color:red" onclick="togglePopup1()" href="#">Close</a>
 
                             </div>    
                             </form>
@@ -175,9 +175,9 @@
                         <td data-label="Correct answear"><?php echo $row["correct_answear"]; ?></td>
                         <td data-label="Difficulty"><?php echo $row["difficulty"]; ?></td>
                         <td data-label="On hold"><?php echo $row["onhold"]; ?></td>
-                        <td class="AcceptButton"><a href="accept-question.php?type=2&id=<?php echo $row["id"];?>">Accept</a></td>
-                        <td class="EditButton"><a href="#" onclick="togglePopup2()">Edit</a></td>
-                        <td class="DeleteButton"><a href="delete-question.php?type=2&id=<?php echo $row["id"];?>">Delete</a></td>
+                        <td class="AcceptButton"><a style="text-decoration: none; color:#fff" href="accept-question.php?type=2&id=<?php echo $row["id"];?>">Accept</a></td>
+                        <td class="EditButton"><a style="text-decoration: none; color:#fff" href="#" onclick="togglePopup2()">Edit</a></td>
+                        <td class="DeleteButton"><a style="text-decoration: none; color:#fff" href="delete-question.php?type=2&id=<?php echo $row["id"];?>">Delete</a></td>
                     </tr>
                     <?php
                         $i++;
@@ -224,7 +224,7 @@
 
                                 <button class="btn btn-white-reload btn-animation-1-reload" onclick="togglePopup2()" type="submit" value="Edit">Edit</button>
                                 
-                                <a onclick="togglePopup2()" href="#">Close</a>
+                                <a class="btn btn-white-reload btn-animation-1-reload" style="text-decoration: none; color:red" onclick="togglePopup2()" href="#">Close</a>
                             </div>    
                             </form>   
                         </div>
@@ -258,9 +258,9 @@
                         <td data-label="Answear"><?php echo $row["answear"]; ?></td>
                         <td data-label="Difficulty"><?php echo $row["difficulty"]; ?></td>
                         <td data-label="On hold"><?php echo $row["onhold"]; ?></td>
-                        <td class="AcceptButton"><a href="accept-question.php?type=3&id=<?php echo $row["id"];?>">Accept</a></td>
-                        <td class="EditButton"><a href="#" onclick="togglePopup3()">Edit</a></td>
-                        <td class="DeleteButton"><a href="delete-question.php?type=3&id=<?php echo $row["id"];?>">Delete</a></td>
+                        <td class="AcceptButton"><a style="text-decoration: none; color:#fff" href="accept-question.php?type=3&id=<?php echo $row["id"];?>">Accept</a></td>
+                        <td class="EditButton"><a style="text-decoration: none; color:#fff" href="#" onclick="togglePopup3()">Edit</a></td>
+                        <td class="DeleteButton"><a style="text-decoration: none; color:#fff" href="delete-question.php?type=3&id=<?php echo $row["id"];?>">Delete</a></td>
                     </tr>
                     <?php
                         $i++;
@@ -296,10 +296,8 @@
 
                                         <button class="btn btn-white-reload btn-animation-1-reload" onclick="togglePopup3()" type="submit" value="Edit">Edit</button>
 
-                                        <a onclick="togglePopup3()" href="#">Close</a>
-
+                                        <a class="btn btn-white-reload btn-animation-1-reload" style="text-decoration: none; color:red " onclick="togglePopup3()" href="#">Close</a>
                                     </div>
-
                                 </form>    
                             </div>
                         </div>
@@ -332,9 +330,9 @@
                         <td data-label="Answear"><?php echo $row["answear"]; ?></td>
                         <td data-label="Difficulty"><?php echo $row["difficulty"]; ?></td>
                         <td data-label="On hold"><?php echo $row["onhold"]; ?></td>
-                        <td class="AcceptButton"><a href="accept-question.php?type=4&id=<?php echo $row["id"]; ?>">Accept</a></td>
-                        <td class="EditButton"><a href="#" onclick="togglePopup4()">Edit</a></td>
-                        <td class="DeleteButton"><a href="delete-question.php?type=4&id=<?php echo $row["id"]; ?>">Delete</a></td>
+                        <td class="AcceptButton"><a style="text-decoration: none; color:#fff" href="accept-question.php?type=4&id=<?php echo $row["id"]; ?>">Accept</a></td>
+                        <td class="EditButton"><a style="text-decoration: none; color:#fff" href="#" onclick="togglePopup4()">Edit</a></td>
+                        <td class="DeleteButton"><a style="text-decoration: none; color:#fff" href="delete-question.php?type=4&id=<?php echo $row["id"]; ?>">Delete</a></td>
                     </tr>
                     <?php
                         $i++;
@@ -369,7 +367,7 @@
 
                                         <button class="btn btn-white-reload btn-animation-1-reload" onclick="togglePopup4()" type="submit" value="Edit">Edit</button>
 
-                                        <a onclick="togglePopup4()" href="#">Close</a>
+                                        <a class="btn btn-white-reload btn-animation-1-reload" style="text-decoration: none; color:red" onclick="togglePopup4()" href="#">Close</a>
                                     </div>
                                 </form>    
                             </div>

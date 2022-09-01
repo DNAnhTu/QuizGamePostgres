@@ -138,13 +138,13 @@
 							<div  id="quiz4" class="quiz">
 									
 									<div id="color001">
-										<p><?php echo $row4["question"];?> <input type="text" class="check003" id="inputQ1" size="20"/></p>
+									<p class="questionsText"><?php echo $row4["question"];?> 
+										<input type="text" class="check003" id="inputQ1" size="20" style="height:30px; outline:none; font-size:20px;"/>
+									</p>
 										<input class="hidden" type="text" id="answearQ1" value=<?php echo $row4["answear"];?>>
 									</div>
 									<br><br>
 							</div>
-
-
 							<button  class="btn btn-white-reload btn-animation-1-reload submitButton" onclick="checkScore1()">Submit</button></br>	
 
 				</div><!-- Easy-->
@@ -232,12 +232,13 @@
 									
 							<!-----------------------------------------Quiz 4-------------------------------------------------------->
 							<div  id="quiz4" class="quiz">
-									
-									<div id="color001">
-										<p><?php echo $row8["question"];?> <input type="text" class="check003" id="inputQ2" size="20"/></p>
-										<input class="hidden" type="text" id="answearQ2" value=<?php echo $row8["answear"];?>>
-									</div>
-									<br><br>
+								<div id="color001">
+								<p class="questionsText"><?php echo $row8["question"];?> 
+									<input type="text" class="check003" id="inputQ2" size="20" style="height:30px; outline:none; font-size:20px;"/>
+								</p>
+									<input class="hidden" type="text" id="answearQ2" value=<?php echo $row8["answear"];?>>
+								</div>
+								<br><br>
 							</div>
 
 							<button  class="btn btn-white-reload btn-animation-1-reload submitButton" onclick="checkScore2()">Submit</button></br>	
@@ -324,14 +325,15 @@
 									
 							<!-----------------------------------------Quiz 4-------------------------------------------------------->
 							<div  id="quiz4" class="quiz">
-									
-									<div id="color001">
-										<p><?php echo $row12["question"];?> <input type="text" class="check003" id="inputQ3" size="20"/></p>
-										<input class="hidden" type="text" id="answearQ3" value=<?php echo $row12["answear"];?>>
-									</div>
-									<br><br>
+								<div id="color001">
+									<p class="questionsText">
+										<?php echo $row12["question"];?> 
+										<input type="text" class="check003" id="inputQ3" size="20" style="height:30px; outline:none; font-size:20px;"/>
+									</p>
+									<input class="hidden" type="text" id="answearQ3" value=<?php echo $row12["answear"];?>>
+								</div>
+								<br><br>
 							</div>
-
 							<button  class="btn btn-white-reload btn-animation-1-reload submitButton" onclick="checkScore3()">Submit</button></br>	
 
 				</div><!--Hard -->

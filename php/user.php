@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/navbar.css" />
     <script type="text/javascript" src="../scripts/quiz.js"></script>
     <link rel="stylesheet" type="text/css" href="../styles/popup_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>   <!--Profile Icon-->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript">
@@ -42,7 +43,7 @@
       <!--  --------------------Show-quiz-scores----------------------------------->
 <div class="row">
     <div class="col-12 col-s-12">
-        <article>
+        <article style="overflow:auto; height:200px;">
             <table class="styled-table" >
                     <tr style="background: #2B7A78;">
                         <th >Username</th>
@@ -66,7 +67,6 @@
                 ?>
             </table>
         </article>
-
     </div><!--col-12-->
 
     <!----------------------------Change-Profile---------------------------------------->
@@ -186,6 +186,11 @@
 
                 <button class="btn btn-white btn-animation-1" type="submit" value="Add question">Add</button>
             </form>  
+            <form action="../Import/import_multiple_choices.php" enctype ="multipart/form-data" method="POST" style="padding:5px;">
+                <input type="file" name="import_file" required value="" style="background: #ba2916; color: white; padding-right:50px;">
+                <button type="submit" name="import" class="import" style=" padding: 12px 10px; background-color: #4CAF50; outline:none; border:none;">
+                    <i class="fa fa-sort-asc" style="font-size:16px";></i>Import</button>
+            </form>
         </div>
         <button class="dropdownButton2" onclick="myFunction2()">One Choice</button>
         <div id="dropDown2" class="dropdown-container">
@@ -223,7 +228,13 @@
                 </div>    
 
                 <button class="btn btn-white btn-animation-1" type="submit" value="Add question">Add</button>
+
             </form> 
+            <form action="../Import/import_one_choices.php" enctype ="multipart/form-data" method="POST" style="padding:5px;">
+                <input type="file" name="import_file" required value="" style="background: #ba2916; color: white; padding-right:50px;">
+                <button type="submit" name="import" class="import" style=" padding: 12px 10px; background-color: #4CAF50; outline:none; border:none;">
+                    <i class="fa fa-sort-asc" style="font-size:16px";></i>Import</button>
+            </form>
         </div>
         <button class="dropdownButton3" onclick="myFunction3()">Text Complition</button>
         <div id="dropDown3" class="dropdown-container">
@@ -249,6 +260,11 @@
 
                 <button class="btn btn-white btn-animation-1" type="submit" value="Add question">Add</button>
             </form>  
+            <form action="../Import/import_text.php" enctype ="multipart/form-data" method="POST" style="padding:5px;">
+                <input type="file" name="import_file" required value="" style="background: #ba2916; color: white; padding-right:50px;">
+                <button type="submit" name="import" class="import" style=" padding: 12px 10px; background-color: #4CAF50; outline:none; border:none;">
+                    <i class="fa fa-sort-asc" style="font-size:16px";></i>Import</button>
+            </form>
         </div>
         <button class="dropdownButton4" onclick="myFunction4()">True/False</button>
         <div id="dropDown4" class="dropdown-container">
@@ -278,6 +294,11 @@
 
                 <button class="btn btn-white btn-animation-1" type="submit" value="Add question">Add</button>
             </form>  
+            <form action="../Import/import_true_false.php" enctype ="multipart/form-data" method="POST" style="padding:5px;">
+                <input type="file" name="import_file" required value="" style="background: #ba2916; color: white; padding-right:50px;">
+                <button type="submit" name="import" class="import" style=" padding: 12px 10px; background-color: #4CAF50; outline:none; border:none;">
+                    <i class="fa fa-sort-asc" style="font-size:16px";></i>Import</button>
+            </form>
         </div>
 
     </div><!-- col-12-->

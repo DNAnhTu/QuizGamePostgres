@@ -18,6 +18,7 @@
         $destination .= $_FILES["uploadfile"]["name"];
         $filename = $_FILES["uploadfile"]["tmp_name"];
     }
+    
 
     if (!empty($username) && !empty($password1) && !empty($password2) && !is_numeric($username) &&  $password1 === $password2) {
         

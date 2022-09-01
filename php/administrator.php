@@ -54,15 +54,28 @@
                             <td data-label="Sex"><?php echo $row["sex"]; ?></td>
                             <td data-label="Username"><?php echo $row["username"]; ?></td>
                             <td data-label="Password"><?php echo $row["password"]; ?></td>
-                            <td data-label="Email"><?php echo $row["email"]; ?></td>
-                            <td data-label="Photo"><?php echo $row["photo"]; ?></td>
+                            <td data-label="Email">
+                                <?php 
+                                //if email length is greater than 10 change to ...@... .com in to php
+                                if(strlen($row["email"])>10){
+                                    echo substr($row["email"],0,10)."...";
+                                }
+                                ?>
+                            </td>
+                            <td data-label="Photo">
+                                <?php 
+                                if(strlen($row["photo"])>20){
+                                    echo substr($row["photo"],0,20)."...";
+                                }
+                                ?>
+                                </td>
                             <td data-label="Role"><?php echo $row["role"]; ?></td>
                             <?php
                                 if($row["role"] != "admin") {
                             ?>
-                                    <td class="PromoteButton"><a href="promote-user.php?username=<?php echo $row["username"]; ?>">Promote</a></td> <!-- class="PromoteButton" -->
-                                    <td class="DemoteButton"><a href="demote-user.php?username=<?php echo $row["username"]; ?>">Demote</a></td> <!-- class="DemoteButton" -->
-                                    <td class="DeleteButton"><a href="delete-user.php?username=<?php echo $row["username"]; ?>">Delete</a></td><!--class="DeleteButton"-->
+                                    <td class="PromoteButton"><a style="text-decoration: none; color:#fff;" href="promote-user.php?username=<?php echo $row["username"]; ?>">Promote</a></td> <!-- class="PromoteButton" -->
+                                    <td class="DemoteButton"><a style="text-decoration: none; color:#fff;" href="demote-user.php?username=<?php echo $row["username"]; ?>">Demote</a></td> <!-- class="DemoteButton" -->
+                                    <td class="DeleteButton"><a style="text-decoration: none; color:#fff;" href="delete-user.php?username=<?php echo $row["username"]; ?>">Delete</a></td><!--class="DeleteButton"-->
                             <?php
                                 }
                             ?>
@@ -74,6 +87,5 @@
                     </table>
             </article>
         </div>
-
     </body>
 </html>
